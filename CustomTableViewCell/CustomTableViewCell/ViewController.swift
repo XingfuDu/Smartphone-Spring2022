@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!TableViewCell
-        cell.imageViewCell.image = UIImage(arr[indexPath.row])
+        cell.imgView.image = UIImage(named: arr[indexPath.row])
         cell.lblCell.text = arr[indexPath.row]
         return cell
     }

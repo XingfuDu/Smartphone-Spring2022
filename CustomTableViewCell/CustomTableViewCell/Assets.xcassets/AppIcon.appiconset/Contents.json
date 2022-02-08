@@ -89,65 +89,6 @@
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
-    },
-    {
-      "filename" : "Seattle1.jpg",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "Seattle2.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle3.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle4.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle5.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle6.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle7.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle8.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle9.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Seattle10.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
     }
   ],
   "info" : {
