@@ -21,9 +21,21 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go To SVC"/>
                                 <connections>
-                                    <segue destination="Yeo-lu-n7e" kind="show" id="5d0-L0-wZN"/>
+                                    <action selector="goToSecondVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4j-W8-knT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBV-aW-voS">
+                                <rect key="frame" x="159" y="112" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hnf-Wg-ljj">
+                                <rect key="frame" x="159" y="199" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,15 +45,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="35Z-mI-lE7"/>
+                    <connections>
+                        <outlet property="txtFirstName" destination="eBV-aW-voS" id="mDW-0s-8nc"/>
+                        <outlet property="txtLastName" destination="hnf-Wg-ljj" id="Kbr-y8-Hfo"/>
+                        <segue destination="Yeo-lu-n7e" kind="show" identifier="segueToSVC" id="M3y-Mt-nz6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Ddc-tV-jYl">
             <objects>
-                <viewController id="Yeo-lu-n7e" sceneMemberID="viewController">
+                <viewController id="Yeo-lu-n7e" customClass="SecondViewController" customModule="Assignment3_a" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wHV-r8-1nd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +69,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68E-Hk-XEV">
+                                <rect key="frame" x="152" y="545" width="111" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="Yeo-lu-n7e" eventType="touchUpInside" id="kCW-Qo-x1b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AtF-wb-34Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,6 +87,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fyz-Ab-7Ua"/>
+                    <connections>
+                        <outlet property="lblWelcome" destination="uqJ-Y4-Zno" id="DRh-gN-sMr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHd-FZ-oll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
